@@ -1,7 +1,7 @@
 # resteasy-template
 
 <div>
-Notes:
+<p>Notes:</p>   
 
 I do not claim ownership to any techniques shown herein as there are many such examples of RestEasy on the web.
 This project was created as a simple example of how to use the JBoss RestEasy framework and save myself time the next time I need it. 
