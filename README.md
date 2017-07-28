@@ -28,7 +28,7 @@ This example provides one example entry point API called /get/status which is de
 The GetStatusResource class implements the following methods of access:
 
 Text mode:
-http://localhost:8084/resteasy/get/status
+http://localhost:8084/resteasy/get/status or http://localhost:8084/resteasy/get/status/text
 
 will return a simple text response "RUNNING"
 
