@@ -30,14 +30,15 @@ This example provides one example entry point API called /get/status which is de
 
 <div>
 <p>WADL call:</p> 
-I my example below tomcat is running on port 8084 your usage may be different. In order to retrieve the WADL document you can use the following URL:
+In my example below tomcat is running on port 8084 your usage may be different. 
+In order to retrieve the WADL document you can use the following URL:
 
 Request:
 http://localhost:8084/resteasy/application.wadl
 
-Response:
-
+Response:<br />
 &lt;application xmlns="http://wadl.dev.java.net/2009/02"&gt;<br />
+<p style="margin-left: 40px">
 &lt;resources base="http://localhost:8084/resteasy"&gt;<br />
 &lt;resource path="/get/status"&gt;<br />
 &lt;resource path="/json"&gt;<br />
@@ -68,6 +69,7 @@ Response:
 &lt;/method&gt;<br />
 &lt;/resource&gt;<br />
 &lt;/resources&gt;<br />
+</p>
 &lt;/application&gt;<br />
 
 </div>
