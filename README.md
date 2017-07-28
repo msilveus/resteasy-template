@@ -31,7 +31,7 @@ This example provides one example entry point API called /get/status which is de
 <div>
 <p>WADL call:</p> 
 In my example below tomcat is running on port 8084 your usage may be different. 
-In order to retrieve the WADL document you can use the following URL:
+In order to retrieve the WADL document you can use the following URL call:
 
 Request:
 http://localhost:8084/resteasy/application.wadl
