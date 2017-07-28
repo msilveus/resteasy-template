@@ -36,36 +36,38 @@ Request:
 http://localhost:8084/resteasy/application.wadl
 
 Response:
-<application xmlns="http://wadl.dev.java.net/2009/02">
-<resources base="http://localhost:8084/resteasy">
-<resource path="/get/status">
-<resource path="/json">
-<method id="getJSONStatus" name="GET">
-<response>
-<representation mediaType="application/json"/>
-</response>
-</method>
-</resource>
-<resource path="/text">
-<method id="getTextStatus" name="GET">
-<response>
-<representation mediaType="text/plain"/>
-</response>
-</method>
-</resource>
-<resource path="/xml">
-<method id="getXMLStatus" name="GET">
-<response>
-<representation mediaType="application/xml"/>
-</response>
-</method>
-</resource>
-<method id="getStatus" name="GET">
-<response>
-<representation mediaType="text/plain"/>
-</response>
-</method>
-</resource>
-</resources>
-</application>
+
+&lt;application xmlns="http://wadl.dev.java.net/2009/02"&gt;
+&lt;resources base="http://localhost:8084/resteasy"&gt;
+&lt;resource path="/get/status"&gt;
+&lt;resource path="/json"&gt;
+&lt;method id="getJSONStatus" name="GET"&gt;
+&lt;response&gt;
+&lt;representation mediaType="application/json"/&gt;
+&lt;/response&gt;
+&lt;/method&gt;
+&lt;/resource&gt;
+&lt;resource path="/text"&gt;
+&lt;method id="getTextStatus" name="GET"&gt;
+&lt;response&gt;
+&lt;representation mediaType="text/plain"/&gt;
+&lt;/response&gt;
+&lt;/method&gt;
+&lt;/resource&gt;
+&lt;resource path="/xml"&gt;
+&lt;method id="getXMLStatus" name="GET"&gt;
+&lt;response&gt;
+&lt;representation mediaType="application/xml"/&gt;
+&lt;/response&gt;
+&lt;/method&gt;
+&lt;/resource&gt;
+&lt;method id="getStatus" name="GET"&gt;
+&lt;response&gt;
+&lt;representation mediaType="text/plain"/&gt;
+&lt;/response&gt;
+&lt;/method&gt;
+&lt;/resource&gt;
+&lt;/resources&gt;
+&lt;/application&gt;
+
 </div>
