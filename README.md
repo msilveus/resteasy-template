@@ -38,37 +38,38 @@ http://localhost:8084/resteasy/application.wadl
 
 Response:<br />
 ```xml
-&lt;application xmlns="http://wadl.dev.java.net/2009/02"&gt;<br />
-    &lt;resources base="http://localhost:8084/resteasy"&gt;<br />
-        &lt;resource path="/get/status"&gt;<br />
-            &lt;resource path="/json"&gt;<br />
-                &lt;method id="getJSONStatus" name="GET"&gt;<br />
-                    &lt;response&gt;<br />
-                        &lt;representation mediaType="application/json"/&gt;<br />
-                    &lt;/response&gt;<br />
-                &lt;/method&gt;<br />
-            &lt;/resource&gt;<br />
-            &lt;resource path="/text"&gt;<br />
-                &lt;method id="getTextStatus" name="GET"&gt;<br />
-                    &lt;response&gt;<br />
-                        &lt;representation mediaType="text/plain"/&gt;<br />
-                    &lt;/response&gt;<br />
-                &lt;/method&gt;<br />
-            &lt;/resource&gt;<br />
-            &lt;resource path="/xml"&gt;<br />
-                &lt;method id="getXMLStatus" name="GET"&gt;<br />
-                    &lt;response&gt;<br />
-                        &lt;representation mediaType="application/xml"/&gt;<br />
-                    &lt;/response&gt;<br />
-                &lt;/method&gt;<br />
-            &lt;/resource&gt;<br />
-            &lt;method id="getStatus" name="GET"&gt;<br />
-                &lt;response&gt;<br />
-                    &lt;representation mediaType="text/plain"/&gt;<br />
-                &lt;/response&gt;<br />
-            &lt;/method&gt;<br />
-        &lt;/resource&gt;<br />
-    &lt;/resources&gt;<br />
-&lt;/application&gt;<br />
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <resources base="http://localhost:8084/resteasy">
+        <resource path="/get/status">
+            <resource path="/json">
+                <method id="getJSONStatus" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/xml">
+                <method id="getXMLStatus" name="GET">
+                    <response>
+                        <representation mediaType="application/xml"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/text">
+                <method id="getTextStatus" name="GET">
+                    <response>
+                        <representation mediaType="text/plain"/>
+                    </response>
+                </method>
+            </resource>
+            <method id="getStatus" name="GET">
+                <response>
+                    <representation mediaType="text/plain"/>
+                </response>
+            </method>
+        </resource>
+    </resources>
+</application>
 ```
 </div>
