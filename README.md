@@ -25,6 +25,34 @@ This example provides one example entry point API called /get/status which is de
         webservices.add(new GetStatusResource());
    }
 
+The GetStatusResource class implements the following methods of access:
+
+Text mode:
+http://localhost:8084/resteasy/get/status
+
+will return a simple text response "RUNNING"
+
+JSON mode:
+http://localhost:8084/resteasy/get/status/json
+
+will return a JSON response:
+```json
+{
+errorCode: 0,
+message: "RUNNING"
+}
+```
+
+XML mode:
+http://localhost:8084/resteasy/get/status/xml
+
+will return an XML response:
+```xml
+<restSvcResult>
+<errorCode>0</errorCode>
+<message>RUNNING</message>
+</restSvcResult>
+```
 
 </div>
 
