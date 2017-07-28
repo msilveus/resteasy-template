@@ -17,11 +17,11 @@ RestEasy is a servlet based rest service so this project will compile into a war
 <p>Usage:</p> 
 This example provides one example entry point API called /get/status which is define in the GetStatusResource class. This API entry point is created in the main application class RestServiceApplication using the following pattern:
 
-    private Set<Object> <b>webservices</b> = new HashSet<Object>();
+    private Set<Object> webservices = new HashSet<Object>();
 
     public RestServiceApplication() {
         initializeRestService(Level.DEBUG);
-        <b>webservices.add(new GetStatusResource());</b>
+        webservices.add(new GetStatusResource());
    }
 
 
