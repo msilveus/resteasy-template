@@ -9,6 +9,20 @@ It is being placed here to serve as a guide on how to get started with RestEasy 
 If you wish to use this project as a base to your own please clone than copy files to your own project. 
 
 It is a Maven project so if your IDE supports Maven you should be able to import easily using and existing pom file.
+
+RestEasy is a servlet based rest service so this project will compile into a war file and can be installed as a Tomcat web application.
 </div>
 
-Usage:
+<div>
+<p>Usage:</p> 
+This example provides one example entry point API called /get/status which is define in the GetStatusResource class. This API entry point is created in the main application class RestServiceApplication using the following pattern:
+
+    private Set<Object> <b>webservices</b> = new HashSet<Object>();
+
+    public RestServiceApplication() {
+        initializeRestService(Level.DEBUG);
+        <b>webservices.add(new GetStatusResource());</b>
+   }
+
+
+</div>
