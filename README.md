@@ -37,6 +37,7 @@ Request:
 http://localhost:8084/resteasy/application.wadl
 
 Response:<br />
+```xml
 &lt;application xmlns="http://wadl.dev.java.net/2009/02"&gt;<br />
     &lt;resources base="http://localhost:8084/resteasy"&gt;<br />
         &lt;resource path="/get/status"&gt;<br />
@@ -69,5 +70,5 @@ Response:<br />
         &lt;/resource&gt;<br />
     &lt;/resources&gt;<br />
 &lt;/application&gt;<br />
-
+```
 </div>
